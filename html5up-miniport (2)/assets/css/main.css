@@ -120,6 +120,7 @@ input, select, textarea {
 
 		a img {
 			border: 0;
+			border-radius: 15px;    /* NOTE   ADDED BORDER RADIUS */
 		}
 
 	b, strong {
@@ -231,6 +232,7 @@ input, select, textarea {
 
 		.container.medium {
 			width: 900px;
+			
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -289,14 +291,17 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+		
 	}
 
 		.row > * {
 			box-sizing: border-box;
+			
 		}
 
 		.row.gtr-uniform > * > :last-child {
 			margin-bottom: 0;
+			
 		}
 
 		.row.aln-left {
@@ -329,6 +334,7 @@ input, select, textarea {
 
 		.row > .col-1 {
 			width: 8.33333%;
+			
 		}
 
 		.row > .off-1 {
@@ -1512,6 +1518,7 @@ input, select, textarea {
 		font-weight: 700;
 		display: block;
 		margin: 0 0 0.5em 0;
+
 	}
 
 	form input[type=text],
@@ -1543,10 +1550,12 @@ input, select, textarea {
 		form textarea:focus {
 			background: #fafafa;
 			box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025), inset 0px 0px 2px 1px #43bff0;
+			
 		}
 
 	form textarea {
 		height: 15em;
+		
 	}
 
 	form .actions:last-child {
@@ -1608,9 +1617,10 @@ input, select, textarea {
 			}
 
 /* Section/Article */
-
+										/* NOTE  ADDED BORDER RADIUS: Which changed photos and form border radius */
 	section, article {
 		margin-bottom: 3em;
+		border-radius: 15px;
 	}
 
 	section > :last-child,
