@@ -1618,7 +1618,15 @@ input, select, textarea {
 
 /* Section/Article */
 										/* NOTE  ADDED BORDER RADIUS: Which changed photos and form border radius */
-	section, article {
+					
+#first-image {
+	border: 3px solid blue;  /* NOTE     ADDED THIS ID */
+	width: 100%;				/* NOTE     ADDED THIS ID */
+	height: 190px;				/* NOTE     ADDED THIS ID */
+}	
+
+
+section, article {
 		margin-bottom: 3em;
 		border-radius: 15px;
 	}
@@ -1630,8 +1638,7 @@ input, select, textarea {
 		margin-bottom: 0;
 	}
 
-/* Image */
-
+										/* NOTE      IMAGES      IMAGES     IMAGES   */
 	.image {
 		display: inline-block;
 		position: relative;
@@ -1640,6 +1647,11 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			border-radius: 15px; 	 	 /* NOTE    ADDED BORDER RADIUS   */
+
+		}
+		.image img:hover {				 /* NOTE    ADDED OPACITY ON HOVER  */
+			opacity: .8;
 		}
 
 		.image.fit {
