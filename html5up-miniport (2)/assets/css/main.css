@@ -118,6 +118,42 @@ input, select, textarea {
 			color: #43bff0 !important;
 		}
 
+
+
+/* ############################################################# */
+					/* NOTE     ADDED SPINNING GALAXY */
+		                          /* NOTE   ADDED THIS SPINNING GALAXY */
+.wrap {
+	width:300px;
+	height: 300px;
+	margin: auto;
+	z-index:1;
+	/* border: 5px solid red; */
+  }
+  .img-box13 {
+	width: 200px;
+	height:200px;
+	position:absolute;
+	border-radius: 50%;
+	background: url(https://spaceplace.nasa.gov/review/light-year/galaxy.jpg) top center no-repeat; 
+	animation: spin 10s linear infinite;
+	/*Set our animation play state to paused initially */
+	animation-play-state: infinite; 
+  }
+  .sticker:hover {
+	/* Toggle our animation play state to running when we are hovering over our sticker */
+	animation-play-state: running;
+  }
+  @keyframes spin {
+	100% {transform: rotate(1turn); }
+  }
+.msg {
+	margin-top: 200px;
+	text-align: justify;
+}
+
+
+/* ###################################################### */
 		a img {
 			border: 0;
 			border-radius: 15px;    /* NOTE   ADDED BORDER RADIUS */
@@ -1620,11 +1656,15 @@ input, select, textarea {
 										/* NOTE  ADDED BORDER RADIUS: Which changed photos and form border radius */
 					
 #first-image {
-	border: 3px solid blue;  /* NOTE     ADDED THIS ID */
-	width: 100%;				/* NOTE     ADDED THIS ID */
-	height: 190px;				/* NOTE     ADDED THIS ID */
+									/* NOTE     ADDED THIS ID */
+	width: 100%;					  /* NOTE     ADDED THIS ID */
+	height: 190px;					 /* NOTE     ADDED THIS ID */
 }	
 
+#think-box {							/* NOTE     ADDED THIS ID */
+	height: 200px;						/* NOTE     ADDED THIS ID */
+	/* border: 3px solid pink; */
+}
 
 section, article {
 		margin-bottom: 3em;
