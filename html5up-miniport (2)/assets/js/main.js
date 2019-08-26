@@ -27,9 +27,22 @@
 
 	// Scrolly.
 		$('#nav a, .scrolly').scrolly({
-			speed: 1000,
+			speed: 2000,
 			offset: function() { return $nav.height(); }
 		});
 
 })(jQuery);
+
+
 // #################################
+// TYPEWRITER EFFECT
+var i = 0;
+var txt = '... and this is my porfolio ';
+var speed = 2000;
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("type-scroll").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}

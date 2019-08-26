@@ -7,6 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -121,7 +122,7 @@ input, select, textarea {
 
 
 /* ############################################################# */
-					/* NOTE     ADDED SPINNING GALAXY */
+						/* NOTE     ADDED SPINNING GALAXY */
 		                          /* NOTE   ADDED THIS SPINNING GALAXY */
 .wrap {
 	width:300px;
@@ -136,7 +137,7 @@ input, select, textarea {
 	position:absolute;
 	border-radius: 50%;
 	background: url(https://spaceplace.nasa.gov/review/light-year/galaxy.jpg) top center no-repeat; 
-	animation: spin 10s linear infinite;
+	animation: spin 30s linear infinite;
 	/*Set our animation play state to paused initially */
 	animation-play-state: infinite; 
   }
@@ -150,6 +151,13 @@ input, select, textarea {
 .msg {
 	margin-top: 200px;
 	text-align: justify;
+}
+/* -------------------------- */
+
+#type-scroll {
+	color: gray;
+	font-size: 20px;
+	font-weight: bold
 }
 
 
@@ -1761,6 +1769,7 @@ section, article {
 		.button:hover {
 			background-color: #43bff0;
 			color: #fff !important;
+			border: 3px solid gray;				/* NOTE      Added border on HOVER */
 		}
 
 		input[type="button"]:active,
