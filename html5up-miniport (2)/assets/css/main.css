@@ -159,6 +159,20 @@ input, select, textarea {
 	font-size: 20px;
 	font-weight: bold
 }
+/* NOTE   2ND PAGE      2ND PAGE     2ND PAGE    2ND PAGE  */
+
+.list-container {
+	border: 3px solid blue;
+	width: 50%;
+	height: 40%;
+	margin: 0 auto;
+	margin-top: 150px;
+	padding: 15px;
+	color: black;
+	font-weight: bold;
+	border-radius: 15px;
+	background: beige;
+}
 
 
 /* ###################################################### */
